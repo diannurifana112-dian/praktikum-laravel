@@ -3,7 +3,7 @@
 @section('content')
 
 <h1>Tambah Surat Masuk</h1>
-<form action="{{ route('surat-masuk.update') }}" method="POST">
+<form action="{{ route('surat-masuk.store') }}" method="POST">
     @csrf
     <p> Nomer Surat:<br>
         <input name="nomer_surat" value="{{old('nomer_surat')}}">
